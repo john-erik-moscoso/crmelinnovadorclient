@@ -11,7 +11,7 @@ class RegisterController {
   final age = TextEditingController();
   String? gender;
   final phoneNumber = TextEditingController();
-  List<String>? interest;
+  List<String> interest = []; // Inicializamos la lista aquí
   final email = TextEditingController();
   final password = TextEditingController();
   final repeatPassword = TextEditingController();

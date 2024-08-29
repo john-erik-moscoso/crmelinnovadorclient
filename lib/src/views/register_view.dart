@@ -234,7 +234,53 @@ class _RegisterViewState extends State<RegisterView> {
               shrinkWrap: true,
               // Esto asegura que el GridView se ajuste a su contenido
               padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 8),
-              children: _interestViews(),
+              children: [
+                CustomCardImage(
+                  icon: HugeIcons.strokeRoundedHealth,
+                  title: 'Salud',
+                  interest: _controller.interest,
+                ),
+                CustomCardImage(
+                  icon: HugeIcons.strokeRoundedClothes,
+                  title: 'Ropa y Accesorios',
+                  interest: _controller.interest,
+                ),
+                CustomCardImage(
+                  icon: HugeIcons.strokeRoundedBrush,
+                  title: 'Artesanía',
+                  interest: _controller.interest,
+                ),
+                CustomCardImage(
+                  icon: HugeIcons.strokeRoundedVegetarianFood,
+                  title: 'Comida',
+                  interest: _controller.interest,
+                ),
+                CustomCardImage(
+                  icon: HugeIcons.strokeRoundedDrink,
+                  title: 'Bebidas',
+                  interest: _controller.interest,
+                ),
+                CustomCardImage(
+                  icon: HugeIcons.strokeRoundedTulip,
+                  title: 'Belleza',
+                  interest: _controller.interest,
+                ),
+                CustomCardImage(
+                  icon: HugeIcons.strokeRoundedArtboardTool,
+                  title: 'Miscelánea',
+                  interest: _controller.interest,
+                ),
+                CustomCardImage(
+                  icon: HugeIcons.strokeRoundedBasketball01,
+                  title: 'Deportes',
+                  interest: _controller.interest,
+                ),
+                CustomCardImage(
+                  icon: HugeIcons.strokeRoundedBitcoinSmartphone01,
+                  title: 'Tecnología',
+                  interest: _controller.interest,
+                ),
+              ],
             ),
           ),
           actions: [
@@ -258,56 +304,5 @@ class _RegisterViewState extends State<RegisterView> {
         );
       },
     );
-  }
-
-  // Lista de categorias
-  List<Widget> _interestViews() {
-    return [
-      CustomCardImage(
-        icon: HugeIcons.strokeRoundedHealth,
-        title: 'Salud',
-        interest: _controller.interest,
-      ),
-      CustomCardImage(
-        icon: HugeIcons.strokeRoundedClothes,
-        title: 'Ropa y Accesorios',
-        interest: _controller.interest,
-      ),
-      CustomCardImage(
-        icon: HugeIcons.strokeRoundedBrush,
-        title: 'Artesanía',
-        interest: _controller.interest,
-      ),
-      CustomCardImage(
-        icon: HugeIcons.strokeRoundedVegetarianFood,
-        title: 'Comida',
-        interest: _controller.interest,
-      ),
-      CustomCardImage(
-        icon: HugeIcons.strokeRoundedDrink,
-        title: 'Bebidas',
-        interest: _controller.interest,
-      ),
-      CustomCardImage(
-        icon: HugeIcons.strokeRoundedTulip,
-        title: 'Belleza',
-        interest: _controller.interest,
-      ),
-      CustomCardImage(
-        icon: HugeIcons.strokeRoundedArtboardTool,
-        title: 'Miscelánea',
-        interest: _controller.interest,
-      ),
-      CustomCardImage(
-        icon: HugeIcons.strokeRoundedBasketball01,
-        title: 'Deportes',
-        interest: _controller.interest,
-      ),
-      CustomCardImage(
-        icon: HugeIcons.strokeRoundedBitcoinSmartphone01,
-        title: 'Tecnología',
-        interest: _controller.interest,
-      ),
-    ];
   }
 }
