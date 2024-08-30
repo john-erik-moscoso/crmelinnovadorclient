@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "971428816077",
+    "project_id": "crmelinnovador",
+    "storage_bucket": "crmelinnovador.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971428816077:android:b8c9db7d790c9a94a4b584",
+        "android_client_info": {
+          "package_name": "com.crmelinnovadorclient.crmelinnovadorclient"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ6XnTL89uE94Hg14unS-kULeQIXuk620"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,5 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.crmelinnovadorclient.crmelinnovadorclient">
     <application
         android:label="CRM el innovador cliente"
         android:name="${applicationName}"

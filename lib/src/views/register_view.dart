@@ -85,7 +85,8 @@ class _RegisterViewState extends State<RegisterView> {
               // Titulo
               const CustomDescription(
                 padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                description: 'Diligencia la siguiente información para continuar con tu registro.',
+                description:
+                    'Diligencia la siguiente información para continuar con tu registro.',
                 fontSize: 18,
                 color: Colors.black,
                 fontFamily: 'Rboto',
@@ -132,7 +133,7 @@ class _RegisterViewState extends State<RegisterView> {
                 colorText: Colors.white,
                 fontSize: 20,
                 fontFamily: 'Roboto',
-                fontWeight: FontWeight.w700,
+                fontWeight: FontWeight.w400,
                 icon: const Icon(
                   Icons.abc,
                   color: Colors.white,
@@ -182,7 +183,7 @@ class _RegisterViewState extends State<RegisterView> {
               ),
               // Finalizar registro
               CustomButtons(
-                onTap: () => '',
+                onTap: () => _controller.register(),
                 width: MediaQuery.of(context).size.width * .9,
                 padding: const EdgeInsets.symmetric(
                   horizontal: 10,
@@ -211,6 +212,7 @@ class _RegisterViewState extends State<RegisterView> {
   Future _windowOfInterest() {
     return showDialog(
       barrierColor: CustomColors.colorPrimary,
+      barrierDismissible: false,
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
@@ -290,7 +292,7 @@ class _RegisterViewState extends State<RegisterView> {
               padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
               margin: const EdgeInsets.only(top: 20, bottom: 10),
               backgroundColor: CustomColors.colorPrimary,
-              title: 'Atras',
+              title: 'Aceptar',
               colorText: Colors.white,
               fontSize: 14,
               fontFamily: 'Roboto',
